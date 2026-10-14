@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KV Mau Exam Timetable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <div class="kicker">Class XI &middot; Session 2026&ndash;27</div>
+    <h1>PM SHRI Kendriya Vidyalaya Mau</h1>
+    <p class="hindi" lang="hi">पीएम श्री केन्द्रीय विद्यालय मऊ</p>
+    <div class="meta">
+      <span class="chip"><b>Half Yearly Examination</b></span>
+      <span class="chip num">2 &ndash; 12 November 2026</span>
+      <span class="chip num">8:15 AM &ndash; 11:30 AM</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero-wrap">
+    <section class="hero" id="hero" data-state="up" aria-live="polite" aria-label="Live exam countdown">
+      <div class="hero-top">
+        <span class="state"><span class="dot"></span><span id="heroState">Next exam in</span></span>
+        <span class="hero-date num" id="heroDate"></span>
+      </div>
+      <p class="hero-subjects" id="heroSubjects"></p>
+      <div class="units" id="units">
+        <div class="unit" id="uDays"><strong class="num" id="vDays">00</strong><span>Days</span></div>
+        <div class="unit"><strong class="num" id="vHours">00</strong><span>Hours</span></div>
+        <div class="unit"><strong class="num" id="vMins">00</strong><span>Minutes</span></div>
+        <div class="unit"><strong class="num" id="vSecs">00</strong><span>Seconds</span></div>
+      </div>
+      <div class="bar" id="heroBar" hidden><i id="heroBarFill"></i></div>
+      <p class="hero-foot" id="heroFoot"></p>
+      <p class="final" id="heroFinal" hidden></p>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Examination Schedule</h2>
+      <p>Every paper runs 8:15 AM to 11:30 AM (IST)</p>
+    </div>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</main>
+
+<footer class="wrap">
+  <p>Students appear for the paper of their own subject on each date.</p>
+  <p>All times are Indian Standard Time. The countdowns update every second.</p>
+  <p>Wishing every student of Class XI the very best.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
