@@ -1,57 +1,145 @@
+
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071b3b">
 <title>KV Mau Exam Timetable</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hind:wght@400;500;600&display=swap">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<div class="wallpaper">
+    <div class="wallpaper-glow glow-one"></div>
+    <div class="wallpaper-glow glow-two"></div>
+    <div class="wallpaper-orb orb-one"></div>
+    <div class="wallpaper-orb orb-two"></div>
+    <div class="wallpaper-grid"></div>
+</div>
+
 <header class="masthead">
-  <div class="wrap">
-    <div class="kicker">Class XI &middot; Session 2026&ndash;27</div>
-    <h1>PM SHRI Kendriya Vidyalaya Mau</h1>
-    <p class="hindi" lang="hi">पीएम श्री केन्द्रीय विद्यालय मऊ</p>
-    <div class="meta">
-      <span class="chip"><b>Half Yearly Examination</b></span>
-      <span class="chip num">2 &ndash; 12 November 2026</span>
-      <span class="chip num">8:30 AM &ndash; 11:45 AM</span>
+    <div class="wrap">
+
+        <div class="topline">
+            <span class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                CLASS XI / SESSION 2026–27
+            </span>
+
+            <span class="live-clock">
+                HALF YEARLY EXAMINATION
+            </span>
+        </div>
+
+        <h1>PM SHRI Kendriya<br>Vidyalaya Mau</h1>
+
+        <p class="hindi" lang="hi">
+            पीएम श्री केन्द्रीय विद्यालय मऊ
+        </p>
+
+        <div class="meta">
+            <span class="glass-chip">
+                <span class="chip-icon">▦</span>
+                2 – 12 November 2026
+            </span>
+
+            <span class="glass-chip">
+                <span class="chip-icon">◷</span>
+                8:30 AM – 11:45 AM
+            </span>
+        </div>
+
     </div>
-  </div>
 </header>
 
 <main>
-  <div class="wrap hero-wrap">
-    <section class="hero" id="hero" data-state="up" aria-live="polite" aria-label="Live exam countdown">
-      <div class="hero-top">
-        <span class="state"><span class="dot"></span><span id="heroState">Next exam in</span></span>
-        <span class="hero-date num" id="heroDate"></span>
-      </div>
-      <p class="hero-subjects" id="heroSubjects"></p>
-      <div class="units" id="units">
-        <div class="unit" id="uDays"><strong class="num" id="vDays">00</strong><span>Days</span></div>
-        <div class="unit"><strong class="num" id="vHours">00</strong><span>Hours</span></div>
-        <div class="unit"><strong class="num" id="vMins">00</strong><span>Minutes</span></div>
-        <div class="unit"><strong class="num" id="vSecs">00</strong><span>Seconds</span></div>
-      </div>
-      <div class="bar" id="heroBar" hidden><i id="heroBarFill"></i></div>
-      <p class="hero-foot" id="heroFoot"></p>
-      <p class="final" id="heroFinal" hidden></p>
-    </section>
-  </div>
+    <div class="wrap">
 
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Examination Schedule</h2>
-      <p>Every paper runs 8:30 AM to 11:45 AM (IST)</p>
+        <section class="hero glass-panel" id="hero" data-state="up" aria-live="polite">
+
+            <div class="hero-top">
+                <span class="state">
+                    <span class="dot"></span>
+                    <span id="heroState">Next exam in</span>
+                </span>
+
+                <span class="hero-date num" id="heroDate"></span>
+            </div>
+
+            <div class="hero-heading">
+                <span class="section-kicker">UP NEXT</span>
+                <p class="hero-subjects" id="heroSubjects"></p>
+            </div>
+
+            <div class="units" id="units">
+
+                <div class="unit" id="uDays">
+                    <strong class="num" id="vDays">00</strong>
+                    <span>Days</span>
+                </div>
+
+                <div class="unit">
+                    <strong class="num" id="vHours">00</strong>
+                    <span>Hours</span>
+                </div>
+
+                <div class="unit">
+                    <strong class="num" id="vMins">00</strong>
+                    <span>Minutes</span>
+                </div>
+
+                <div class="unit">
+                    <strong class="num" id="vSecs">00</strong>
+                    <span>Seconds</span>
+                </div>
+
+            </div>
+
+            <div class="bar" id="heroBar" hidden>
+                <i id="heroBarFill"></i>
+            </div>
+
+            <p class="hero-foot" id="heroFoot"></p>
+
+            <p class="final" id="heroFinal" hidden></p>
+
+            <div class="hero-shine"></div>
+
+        </section>
+
+        <div class="section-head">
+
+            <div>
+                <span class="section-kicker">YOUR PLAN</span>
+                <h2>Examination Schedule</h2>
+            </div>
+
+            <span class="schedule-note">
+                <span class="note-dot"></span>
+                All timings in IST
+            </span>
+
+        </div>
+
+        <ol class="timeline" id="timeline"></ol>
+
+        <div class="bottom-note glass-panel">
+            <span class="bottom-note-icon">✦</span>
+            <span>Stay focused. Do your best. Good luck!</span>
+        </div>
+
     </div>
-    <ol class="timeline" id="timeline"></ol>
-  </div>
 </main>
 
 <script src="script.js"></script>
+
 </body>
 </html>
