@@ -1,4 +1,3 @@
-
 /* ==========================================
    APPLE INSPIRED — PREMIUM LIQUID GLASS
 ========================================== */
@@ -239,12 +238,6 @@ h1 {
 
     font-size: 12px;
     font-weight: 600;
-    transition: .25s ease;
-}
-
-.glass-chip:hover {
-    background: rgba(255,255,255,.23);
-    border-color: rgba(255,255,255,.4);
 }
 
 .chip-icon {
@@ -383,6 +376,7 @@ main {
     0% {
         box-shadow: 0 0 0 0 rgba(117,240,193,.5);
     }
+
     100% {
         box-shadow: 0 0 0 10px transparent;
     }
@@ -440,16 +434,6 @@ main {
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.2),
         0 8px 25px rgba(0,0,0,.08);
-
-    transition: .3s ease;
-}
-
-.unit:hover {
-    /* Countdown boxes do not move */
-    transform: none;
-
-    background: rgba(255,255,255,.19);
-    border-color: rgba(140,220,255,.4);
 }
 
 .unit strong {
@@ -579,21 +563,6 @@ main {
     box-shadow:
         0 12px 35px rgba(0,0,0,.13),
         inset 0 1px 0 rgba(255,255,255,.2);
-
-    transition:
-        transform .3s ease,
-        background .3s ease,
-        border-color .3s ease;
-}
-
-.exam:hover {
-    transform: translateY(-4px);
-    background: rgba(255,255,255,.20);
-    border-color: rgba(180,230,255,.45);
-
-    box-shadow:
-        0 18px 45px rgba(0,0,0,.19),
-        inset 0 1px 0 rgba(255,255,255,.25);
 }
 
 .exam[data-state="live"] {
@@ -681,13 +650,6 @@ main {
     font-family: var(--display);
     font-size: 13px;
     font-weight: 700;
-
-    transition: .25s ease;
-}
-
-.subjects li:hover {
-    background: rgba(90,190,255,.22);
-    border-color: rgba(130,220,255,.4);
 }
 
 /* Status information */
